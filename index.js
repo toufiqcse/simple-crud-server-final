@@ -17,9 +17,7 @@ app.use(express.json());
 require("dotenv").config();
 
 // mongoDb connect
-// const uri = process.env.MONGODB_URI;
-const uri =
-  "mongodb+srv://bdtoufiqtech:1reUrzoxMWHylE1Z@cluster0.gnhqmfx.mongodb.net/?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
